@@ -1,4 +1,4 @@
-const backup = require('discord-backup');
+const backup = require('discord-backup-modified');
 const config = require('../config.json');
 
 exports.run = async (client, message, args) => {
