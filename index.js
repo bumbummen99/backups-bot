@@ -1,9 +1,16 @@
 const fs = require('fs');
-
 const Discord = require('discord.js');
+const backup = require('discord-backup-modified');
+const config = require('./config.json');
+
+const backups = `${__dirname}/backups`;
+if (!existsSync(backups)) {
+    mkdirSync(backups);
+}
+backup.setStorageFolder(backups);
+
 const client = new Discord.Client();
 
-const config = require('./config.json');
 client.config = config;
 
 /* Load all events */
