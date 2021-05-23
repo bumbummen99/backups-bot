@@ -5,7 +5,7 @@
   "author": "Androz2091 <androz2091@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "discord-backup": "^2.3.0",
+    "discord-backup-modified": "^2.5.2",
     "discord.js": "^12.5.1"
   }
 }
