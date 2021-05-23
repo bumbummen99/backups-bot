@@ -4,8 +4,8 @@ const backup = require('discord-backup-modified');
 const config = require('./config.json');
 
 const backups = `${__dirname}/backups`;
-if (!existsSync(backups)) {
-    mkdirSync(backups);
+if (!fs.existsSync(backups)) {
+    fs.mkdirSync(backups);
 }
 backup.setStorageFolder(backups);
 
