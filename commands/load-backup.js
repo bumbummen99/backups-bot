@@ -18,9 +18,8 @@ exports.run = async (client, message, args) => {
             max: 1
         });
         collector.on('collect', (m) => {
-            const confirm = m.content === '-confirm';
             collector.stop();
-            if (confirm) {
+            if (m.content === '-confirm') {
 
                 backup.load(backupID, message.guild, {
                     clearGuildBeforeRestore: true,
